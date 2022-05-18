@@ -51,11 +51,11 @@ const ImageUpload = (props) => {
   return (
     <div className="form-control">
       <input
-        value={userData['image'||'']}
+        value={userData['image_file'||'']}
         ref={filePickerRef}
         style={{ display: "none" }}
         type="file"
-        name="image"
+        name="image_file"
         accept=".jpg,.png,.jpeg"
         onChange={pickedHandler}
       />
@@ -64,7 +64,7 @@ const ImageUpload = (props) => {
          {previewUrl && <img src={previewUrl} alt="Preview" /> }
          {!previewUrl && <p>Please pick an image.</p>}
         </div>
-        <button type="button" onClick={pickImageHandler}>
+        <button style={{backgroundColor:'#161819',color:"white",padding:'5px'}} type="button" onClick={pickImageHandler}>
           PICK IMAGE
         </button>
       </div>

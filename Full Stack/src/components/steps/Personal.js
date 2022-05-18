@@ -48,8 +48,7 @@ export default function Personal() {
           className="w-full appearance-none p-1 px-2 text-gray-800 outline-none"
           />
         </div> */}
-        <ImageUpload
-        />
+        <ImageUpload />
       </div>
     </div>
   );
