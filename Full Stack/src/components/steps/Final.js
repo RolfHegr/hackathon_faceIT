@@ -13,7 +13,8 @@ export default function Final() {
     userData.obesity = obesity
     delete userData.height
     delete userData.weight
-    userData.average_drink = userData.average_drink /30
+    userData.average_drink = userData.average_drink *4
+    userData.physical_activity = userData.physical_activity *4
   }
   calculateBMI()
   useEffect(() => {
