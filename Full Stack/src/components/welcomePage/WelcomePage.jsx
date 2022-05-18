@@ -18,7 +18,7 @@ const WelcomePage = () => {
       <div className="welcomeWrapper">
         <h1>FaceIT</h1>
         <h3>We kickstart your new healthier lifestyle</h3>
-        <button onClick={userForm}>Come and see</button>
+        <button onClick={userForm} className="welcomeBtn">Come and see</button>
       </div>
         <div className="welcomeFace">
           <video className="face" muted loop autoPlay={true}>
