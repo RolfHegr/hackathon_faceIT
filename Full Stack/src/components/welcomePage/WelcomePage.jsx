@@ -21,7 +21,7 @@ const WelcomePage = () => {
       </div>
       <div className="sideInfo">
         <div className="welcomeFace">
-          <img src={face} width="300" />
+          <img src={face}/>
         </div>
         <div className="motivation">
           <span>Start a healthier life TODAY!</span>
