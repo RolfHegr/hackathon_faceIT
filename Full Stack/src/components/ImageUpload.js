@@ -59,12 +59,12 @@ const ImageUpload = (props) => {
         accept=".jpg,.png,.jpeg"
         onChange={pickedHandler}
       />
-      <div className={`image-upload ${props.center && "center"}`}>
+      <div style={{display:'flex',flexDirection:'column'}} className={`image-upload ${props.center && "center"}`}>
         <div className="image-upload__preview">
          {previewUrl && <img src={previewUrl} alt="Preview" /> }
          {!previewUrl && <p>Please pick an image.</p>}
         </div>
-        <button style={{backgroundColor:'#161819',color:"white",padding:'5px'}} type="button" onClick={pickImageHandler}>
+        <button style={{backgroundColor:'#161819',color:"white",padding:'5px',margin:'auto'}} type="button" onClick={pickImageHandler}>
           PICK IMAGE
         </button>
       </div>
