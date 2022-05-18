@@ -63,3 +63,8 @@ padding-top: 15rem;
     right: 24rem;
     z-index: -1;
 }
+.test {
+    display: flex;
+    gap: 20px;
+    
+}

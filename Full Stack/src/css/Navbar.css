@@ -3,6 +3,7 @@
   display: flex;
   margin: 0 auto;
   margin-top: 10px;
+  gap: 80rem;
 }
 
 .contact-btn {

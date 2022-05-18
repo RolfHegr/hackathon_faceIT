@@ -4,7 +4,7 @@ import face from "./images/face.jpg";
 import { Container } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import Form from "../Form";
-import faceage from "./images/faceage.mp4"
+import faceage from "./images/faceage.mp4";
 
 const WelcomePage = () => {
     const navigate = useNavigate()
