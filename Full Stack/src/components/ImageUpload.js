@@ -11,6 +11,11 @@ const ImageUpload = (props) => {
   const { userData, setUserData } = useStepperContext();
   const filePickerRef = useRef();
 
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setUserData({ ...userData, [name]: value });
+  };
+
 
     useEffect(() => {
         if (!file) {
@@ -32,7 +37,7 @@ const ImageUpload = (props) => {
       setFile(pickedFile);
       setIsValid(true);
       fileIsValid = true;
-      props.onChange()
+      handleChange(event)
     } else {
       setIsValid(false);
       fileIsValid = false;
@@ -46,12 +51,11 @@ const ImageUpload = (props) => {
   return (
     <div className="form-control">
       <input
-        id={props.id}
-        // onChange={props.handleChange}
         value={userData['image'||'']}
         ref={filePickerRef}
         style={{ display: "none" }}
         type="file"
+        name="image"
         accept=".jpg,.png,.jpeg"
         onChange={pickedHandler}
       />
@@ -64,7 +68,7 @@ const ImageUpload = (props) => {
           PICK IMAGE
         </button>
       </div>
-      {!isValid && <p>{props.errorText}</p>}
+      {/* {!isValid && <p>{props.errorText}</p>} */}
     </div>
   );
 };

@@ -38,7 +38,7 @@ export default function Personal() {
             className="w-full appearance-none p-1 px-2 text-gray-800 outline-none"
           />
         </div>
-        <div className="my-2 flex rounded border border-gray-200 bg-white p-1">
+        {/* <div className="my-2 flex rounded border border-gray-200 bg-white p-1">
           <input
           type='file'
           onChange={handleChange}
@@ -47,10 +47,9 @@ export default function Personal() {
           placeholder="Image"
           className="w-full appearance-none p-1 px-2 text-gray-800 outline-none"
           />
-        </div>
-        {/* <ImageUpload
-          onChange={handleChange}
-        /> */}
+        </div> */}
+        <ImageUpload
+        />
       </div>
     </div>
   );

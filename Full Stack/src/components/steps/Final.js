@@ -4,12 +4,14 @@ import { useStepperContext } from "../../contexts/StepperContext";
 export default function Final() {
   const { userData } = useStepperContext();
   useEffect(()=>{
-    console.log(userData);
+    // console.log(userData);
     const formData = new FormData();
       for (let key in userData) {
         formData.append(key, userData[key]);
       }
-    console.log(formData.entries());
+      for(var pair of formData.entries()) {
+        console.log(pair[0]+ ', '+ pair[1]);
+     }
   })
   return (
     <div className="container md:mt-10">

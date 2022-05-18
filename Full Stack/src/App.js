@@ -33,9 +33,6 @@ function App() {
   };
 
   const handleClick = (direction) => {
-    if (currentStep===3){
-      console.log('last');
-    }
     let newStep = currentStep;
 
     direction === "next" ? newStep++ : newStep--;
