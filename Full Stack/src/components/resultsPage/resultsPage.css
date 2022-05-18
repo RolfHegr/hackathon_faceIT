@@ -49,3 +49,11 @@
     padding: 2.5rem;
     width: 63%;
 }
+.resultBtn{
+    background-color: black;
+    width: 30%;
+    align-content: center;
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+}

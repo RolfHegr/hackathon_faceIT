@@ -30,7 +30,7 @@ function HomeNavbar() {
           </Navbar.Brand>
           </div>
 
-          <Button className="contact-btn shadow-xl" variant="secondary">Secondary</Button>
+          <Button className="contact-btn shadow-xl" variant="secondary">Contact</Button>
         </Container>
       </Navbar>
     </Container>

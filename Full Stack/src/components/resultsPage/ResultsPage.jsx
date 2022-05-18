@@ -10,9 +10,11 @@ import {
   ReactCompareSlider,
   ReactCompareSliderImage,
 } from "react-compare-slider";
+import { useNavigate } from "react-router-dom";
 
 const ResultsPage = () => {
   const [showMore, setShowMore] = useState(true);
+  const navigate = useNavigate()
   //   const [goodYou, setGoodYou] = useState(false);
   //   const [futureYou, setFutureYou] = useState(false);
 
@@ -39,6 +41,9 @@ const ResultsPage = () => {
               width: "100%",
             }}
           />
+        </div>
+        <div className="resultBtn">
+        <button onClick={() => navigate("/reccomend")}>Reccomendatins</button>
         </div>
       </div>
     </Container>
