@@ -28,7 +28,7 @@
     width: fit-content;
 }
 .welcomeFace {
- width: 40rem;
+padding-top: 15rem;
 }
 .sideInfo {
     display: flex;
@@ -48,5 +48,15 @@
 
 .faceSideControl {
     border: 1px solid blue;
-    
+}
+
+.backgroundStyle {
+    background-color: white;
+    height: 35rem;
+    width: 35rem;
+    border-radius: 50%;
+    position: relative;
+    top: -37rem;
+    right: 20rem;
+    z-index: -1;
 }
