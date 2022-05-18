@@ -12,12 +12,15 @@
     padding-top: 21rem;
     margin-left: 5rem;
 }
+.welcomeBtn:hover{
+    background-color: var(--darkGray);
+}
 .welcomeWrapper>h3 {
     font-size: 48px;
     font-weight: 300;
 }
 .welcomeWrapper>button {
-    margin-top: 18px;
+    margin-top: 13rem;
     background-color: black;
     color: white;
     border-radius: 14px;
@@ -52,11 +55,11 @@ padding-top: 15rem;
 
 .backgroundStyle {
     background-color: white;
-    height: 35rem;
-    width: 35rem;
+    height: 44rem;
+    width: 48rem;
     border-radius: 50%;
     position: relative;
-    top: -37rem;
-    right: 20rem;
+    top: -46rem;
+    right: 24rem;
     z-index: -1;
 }
