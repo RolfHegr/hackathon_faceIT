@@ -7,9 +7,15 @@ export default function Final() {
   const { userData } = useStepperContext();
   const [isLoading, setIsLoading] = useState(true);
   const navigate = useNavigate();
-
+  let obesity = 0
+  function calculateBMI(){
+    obesity = (userData.weight / ((userData.height /100)**2))/30
+    userData.obesity = obesity
+    delete userData.height
+    delete userData.weight
+  }
+  calculateBMI()
   useEffect(() => {
-    // console.log(userData);
     const formData = new FormData();
     for (let key in userData) {
       formData.append(key, userData[key]);
