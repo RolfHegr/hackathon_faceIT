@@ -36,3 +36,16 @@
 .resultBtn:hover {
     background-color: var(--darkGray);
 }
+
+.sliderImage {
+    /* width: 60%;
+    margin: 5rem auto; */
+}
+
+.sliderCard {
+    padding: 1rem;
+    background-color: white;
+    background-color: white;
+    padding: 2.5rem;
+    width: 63%;
+}
