@@ -7,8 +7,8 @@ import react from "react";
 
 const ResultsPage = () => {
   const [showMore, setShowMore] = useState(true);
-  const [goodYou, setGoodYou] = useState(false);
-  const [futureYou, setFutureYou] = useState(false);
+//   const [goodYou, setGoodYou] = useState(false);
+//   const [futureYou, setFutureYou] = useState(false);
 
 
   return (
