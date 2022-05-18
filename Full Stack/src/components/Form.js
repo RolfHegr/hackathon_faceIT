@@ -13,7 +13,7 @@ function Form() {
 
   const steps = [
     "Personal",
-    "Helath",
+    "Health",
     "Fitness",
     "Complete",
   ];
