@@ -26,7 +26,7 @@ export default function Final() {
     <div className="container md:mt-10">
       <div className="flex flex-col items-center">
         {isLoading && (
-          <img src="https://www.webtunix.ai/static/img/faceman.gif" />
+          <img style={{borderRadius:'14px'}} src="https://www.webtunix.ai/static/img/faceman.gif" />
         )}
         {/* <div className="wrapper">
           <svg
