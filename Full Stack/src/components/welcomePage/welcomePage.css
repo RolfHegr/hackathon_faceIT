@@ -52,11 +52,11 @@ padding-top: 15rem;
 
 .backgroundStyle {
     background-color: white;
-    height: 35rem;
-    width: 35rem;
+    height: 44rem;
+    width: 48rem;
     border-radius: 50%;
     position: relative;
-    top: -37rem;
-    right: 20rem;
+    top: -46rem;
+    right: 24rem;
     z-index: -1;
 }
