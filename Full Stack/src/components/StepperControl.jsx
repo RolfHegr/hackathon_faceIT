@@ -15,7 +15,7 @@ export default function StepperControl({ handleClick, currentStep, steps }) {
         className="cursor-pointer rounded-lg py-2 px-4 font-semibold uppercase text-white transition duration-200 ease-in-out "
         style={{backgroundColor:'#161819'}}
       >
-        {currentStep === steps.length - 1 ? "Confirm" : "Next"}
+        {currentStep === steps.length - 1 ? "Submit" : "Next"}
       </button>
     </div>
   );

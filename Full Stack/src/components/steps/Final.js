@@ -1,10 +1,13 @@
 import { useEffect, useState } from "react";
 import { Spinner } from "react-bootstrap";
+import { Navigate, useNavigate } from "react-router-dom";
 import { useStepperContext } from "../../contexts/StepperContext";
 
 export default function Final() {
   const { userData } = useStepperContext();
-  const [isLoading, setIsLoading] = useState(true)
+  const [isLoading, setIsLoading] = useState(true);
+  const navigate = useNavigate();
+
   useEffect(() => {
     // console.log(userData);
     const formData = new FormData();
@@ -12,13 +15,19 @@ export default function Final() {
       formData.append(key, userData[key]);
     }
     for (var pair of formData.entries()) {
-      console.log(pair[0] + ', ' + pair[1]);
+      console.log(pair[0] + ", " + pair[1]);
     }
-  })
+  });
+
+  const processData = () => {
+    navigate("./result");
+  };
   return (
     <div className="container md:mt-10">
       <div className="flex flex-col items-center">
-      {isLoading && <img src="https://www.webtunix.ai/static/img/faceman.gif"/>}
+        {isLoading && (
+          <img src="https://www.webtunix.ai/static/img/faceman.gif" />
+        )}
         {/* <div className="wrapper">
           <svg
             className="checkmark"
@@ -47,14 +56,15 @@ export default function Final() {
         {/* <div className="text-lg font-semibold text-gray-500">
           Your Account has been created.
         </div> */}
-        <a className="mt-10" href="/">
+    { !isLoading && (  <a className="mt-10">
           <button
+            onClick={processData}
             className="h-10 px-5 text-white-900 transition-colors duration-150 border border-gray-300 rounded-lg focus:shadow-outline hover:bg-green-500 hover:text-white-900"
-            style={{ backgroundColor: '#3b3b3b', color: "white" }}
+            style={{ backgroundColor: "#3b3b3b", color: "white" }}
           >
-            Close
+            See Results
           </button>
-        </a>
+        </a>)}
       </div>
     </div>
   );

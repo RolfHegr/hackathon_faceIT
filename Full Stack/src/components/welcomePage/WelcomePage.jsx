@@ -25,8 +25,9 @@ const WelcomePage = () => {
         </div>
         <div className="motivation">
           <span>Start a healthier life TODAY!</span>
+          {/* <p>Good habits can change your life</p> */}
           <span>Burn your bad habits before they burn you</span>
-          <span>Take control NOW!</span>
+          <span>Take control now, before it's too late</span>
         </div>
       </div>
     </div>
