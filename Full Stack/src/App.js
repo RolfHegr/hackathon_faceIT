@@ -1,9 +1,11 @@
-
+import './index.css'
 import Form from "./components/Form";
 
 function App() {
   return (
-    <Form/>
+    <div>
+      <Form/> 
+    </div>
   )
 }
 
