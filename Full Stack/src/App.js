@@ -1,9 +1,13 @@
 
 import Form from "./components/Form";
+import WelcomePage from "./components/welcomePage/WelcomePage";
 
 function App() {
   return (
-    <Form/>
+    <div>
+    <WelcomePage />
+    {/* <Form/> */}
+    </div>
   )
 }
 
