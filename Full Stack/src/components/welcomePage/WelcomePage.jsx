@@ -2,24 +2,31 @@ import React from "react";
 import "./welcomePage.css";
 import face from "./images/face.jpg";
 import { Container } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
+import Form from "../Form";
 
 const WelcomePage = () => {
+    const navigate = useNavigate()
+
+    const userForm = () => {
+        navigate("/form")
+    } 
   return (
       <Container>
     <div className="pageWrapper">
       <div className="welcomeWrapper">
         <h1>FaceIT</h1>
         <h3>We kickstart your new healthier lifestyle</h3>
-        <button>Come and see</button>
+        <button onClick={userForm}>Come and see</button>
       </div>
       <div className="sideInfo">
         <div className="welcomeFace">
           <img src={face} width="300" />
         </div>
         <div className="motivation">
-          <p>Start a healthier life TODAY!</p>
-          <p>Burn your bad habits before they burn you</p>
-          <p>Take control NOW!</p>
+          <span>Start a healthier life TODAY!</span>
+          <span>Burn your bad habits before they burn you</span>
+          <span>Take control NOW!</span>
         </div>
       </div>
     </div>

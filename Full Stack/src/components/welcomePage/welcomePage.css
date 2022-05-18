@@ -54,6 +54,10 @@
     font-weight: 500;
     align-items: center;
 }
+.motivation>span {
+    border: 2px solid peru;
+    font-size: 2rem;
+}
 
 .faceSideControl {
     border: 1px solid blue;
