@@ -10,7 +10,7 @@
     font-size: 72px;
     font-weight: 500;
     padding-top: 21rem;
-    margin-left: 5rem;
+
 }
 .welcomeBtn:hover{
     background-color: var(--darkGray);

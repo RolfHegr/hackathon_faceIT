@@ -1,19 +1,33 @@
-import React from 'react'
-import { Container, Navbar, Nav, NavDropdown, Button } from 'react-bootstrap'
+import React from "react";
+import { Button, Container, Navbar } from "react-bootstrap";
+import "../css/Navbar.css";
 
 function HomeNavbar() {
-    return (
-        <div >
-            <Navbar bg="light" expand="lg" style={{ marginTop: '10px' }}>
-                <Container style={{ display: 'flex' }}>
-                    <Navbar.Brand style={{ color: 'black', fontSize: '2rem', fontWeight: 'bold' }} >FaceIT</Navbar.Brand>
-                    <Nav className="me-auto">
-                    <Button variant="light" style={{fontSize:'2rem'}}>Contact</Button>
-                    </Nav>
-                </Container>
-            </Navbar>
-        </div>
-    )
+  return (
+    <Container>
+      <Navbar
+        className="m-0"
+        bg="light"
+        expand="lg"
+        style={{ marginTop: "10px", margin: "0" }}
+      >
+        <Container className="c-nav">
+          <Navbar.Brand
+            style={{
+              color: "black",
+              fontSize: "2rem",
+              fontWeight: "bold",
+              margin: "0",
+            }}
+          >
+            FaceIT
+          </Navbar.Brand>
+
+          <Button className="contact-btn shadow-xl" variant="secondary">Secondary</Button>
+        </Container>
+      </Navbar>
+    </Container>
+  );
 }
 
-export default HomeNavbar
+export default HomeNavbar;
