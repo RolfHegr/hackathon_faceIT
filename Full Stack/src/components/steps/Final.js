@@ -44,7 +44,7 @@ export default function Final() {
         {/* <div className="text-lg font-semibold text-gray-500">
           Your Account has been created.
         </div> */}
-        <a className="mt-10" href="/user/dashboard">
+        <a className="mt-10" href="/">
           <button 
           className="h-10 px-5 text-white-900 transition-colors duration-150 border border-gray-300 rounded-lg focus:shadow-outline hover:bg-green-500 hover:text-white-900"
           style={{backgroundColor:'#3b3b3b',color:"white"}}
