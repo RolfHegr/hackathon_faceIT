@@ -5,7 +5,7 @@ import { useStepperContext } from "../../contexts/StepperContext";
 
 export default function Final() {
   const { userData } = useStepperContext();
-  const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
   const navigate = useNavigate();
   let obesity = 0
   function calculateBMI(){
