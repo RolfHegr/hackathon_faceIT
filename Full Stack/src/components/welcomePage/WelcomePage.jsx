@@ -18,7 +18,7 @@ const WelcomePage = () => {
       <div className="welcomeWrapper">
         <h1>FaceIT</h1>
         <h3>We kickstart your new healthier lifestyle</h3>
-        <button onClick={userForm} className="welcomeBtn">Come and see</button>
+        <button onClick={userForm} className="welcomeBtn">Come and See</button>
       </div>
         <div className="welcomeFace">
           <video className="face" muted loop autoPlay={true}>
@@ -33,12 +33,3 @@ const WelcomePage = () => {
 };
 
 export default WelcomePage;
-
-      // <div className="sideInfo">
-      //   <div className="motivation">
-      //     <span>Start a healthier life TODAY!</span>
-      //     <p>Good habits can change your life</p>
-      //     <span>Burn your bad habits before they burn you</span>
-      //     <span>Take control now, before it's too late</span>
-      //   </div>
-      // </div>

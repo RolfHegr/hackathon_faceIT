@@ -20,7 +20,7 @@
     font-weight: 300;
 }
 .welcomeWrapper>button {
-    margin-top: 13rem;
+    margin-top: 8rem;
     background-color: black;
     color: white;
     border-radius: 14px;
@@ -70,6 +70,13 @@ padding-top: 11rem;
 }
 
 .face {
-    border: 2px solid yellow;
-    height: 40%;
+     height: 40%;
+}
+
+.ageControl {
+    margin-top: 1rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+    display: flex;
+    color: var(--darkGray)
 }

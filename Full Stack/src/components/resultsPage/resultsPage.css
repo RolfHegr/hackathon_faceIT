@@ -1,61 +1,67 @@
 .resultHeader {
-    font-size: 5rem;
-    display: flex;
-    justify-content: center;
-    color: var(--darkGray);
-    margin-top: 3rem;
-
+  font-size: 5rem;
+  display: flex;
+  justify-content: center;
+  color: var(--darkGray);
+  margin-top: 3rem;
 }
 .resultCard {
-    width: 500px;
-    /* height: 500px;  */
-    box-shadow: 2px 7px 11px 0px rgba(214,214,214,0.85);
-    -webkit-box-shadow: 2px 7px 11px 0px rgba(214,214,214,0.85);
-    -moz-box-shadow: 2px 7px 11px 0px rgba(214,214,214,0.85);
-    padding: 1.5rem;
-    background-color: white;
-    border-radius: 10px;
+  width: 500px;
+  /* height: 500px;  */
+  box-shadow: 2px 7px 11px 0px rgba(214, 214, 214, 0.85);
+  -webkit-box-shadow: 2px 7px 11px 0px rgba(214, 214, 214, 0.85);
+  -moz-box-shadow: 2px 7px 11px 0px rgba(214, 214, 214, 0.85);
+  padding: 1.5rem;
+  background-color: white;
+  border-radius: 10px;
 }
-
 .resultImage {
-   
-    display: flex;
-    flex-direction: column;
-    /* max-height: fit-content; */
+  display: flex;
+  flex-direction: column;
+  /* max-height: fit-content; */
 }
 
 .resultBtn {
-    background-color: black;
-    color: white;
-    border-radius: 12px;
-    margin: 2rem auto;
-    padding: 1rem;
-    align-items: center;
-    
+  background-color: black;
+  color: white;
+  border-radius: 12px;
+  margin: 2rem auto;
+  padding: 1rem;
+  align-items: center;
 }
 .resultBtn:hover {
-    background-color: var(--darkGray);
+  background-color: var(--darkGray);
 }
 
-.sliderImage {
+/* .sliderImage {
     width: 100%;
     margin: 0 auto;   
-}
+} */
 
 .sliderCard {
-    background-color: white;
-    padding: 1.5rem;
-    width: 40%;
-    box-shadow: 2px 7px 11px 0px rgba(214,214,214,0.85);
-    -webkit-box-shadow: 2px 7px 11px 0px rgba(214,214,214,0.85);
-    -moz-box-shadow: 2px 7px 11px 0px rgba(214,214,214,0.85);
-    border-radius: 10px;
+  background-color: white;
+  padding: 1.5rem;
+  width: 36%;
+  box-shadow: 2px 7px 11px 0px rgba(214, 214, 214, 0.85);
+  -webkit-box-shadow: 2px 7px 11px 0px rgba(214, 214, 214, 0.85);
+  -moz-box-shadow: 2px 7px 11px 0px rgba(214, 214, 214, 0.85);
+  border-radius: 10px;
 }
-.resultBtn{
-    background-color: black;
-    width: 30%;
-    align-content: center;
-    font-weight: 700;
-    color: white;
-    cursor: pointer;
+.resultBtn {
+  background-color: black;
+  width: 30%;
+  align-content: center;
+  font-weight: 700;
+  color: white;
+  cursor: pointer;
 }
+/* 
+.goodAgeTest{
+    border: 2px solid red;
+    position: relative;
+    top: 1rem;
+}
+
+.badAgeTest {
+    border: 2px solid rebeccapurple;
+} */
