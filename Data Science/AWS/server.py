@@ -2,6 +2,8 @@ from flask import Flask
 from flask import request, jsonify
 import os
 from flask import send_file
+import pickle
+import pandas as pd
 
 
 def make_userimg_dir():
@@ -13,11 +15,17 @@ def make_userimg_dir():
         os.mkdir("user_images_bad")
 
 
-app = Flask(__name__)
+with open("LE_lin_model.pkl", "rb") as pklfile:
+    reg = pickle.load(pklfile)
 
+
+y_pred = reg.predict(pd.DataFrame([{"physical activity": 3/4, "obesity": 22/30, "sex": 0, "average_drink": 3}]))
+print(y_pred)
+app = Flask(__name__)
 
 @app.route("/predict_age", methods=["GET", "POST"])
 def predict_age():
+    request.form
     imagefile = request.files['img_file']
     f_path = 'user_images/' + imagefile.filename
     imagefile.save(f_path)
