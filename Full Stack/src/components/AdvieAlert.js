@@ -25,12 +25,12 @@ function AdvieAlert() {
     //         - habit building</p>
     //         <button>Sign Up Now!</button>
     // </div>
-    <div class="main-container">
-      <div class="heading">
-        <h1 class="heading__title">Daily advice</h1>
-        <p class="heading__credits">
+    <div className="main-container">
+      <div className="heading">
+        <h1 className="heading__title">Daily advice</h1>
+        <p className="heading__credits">
           <a
-            class="heading__link"
+            className="heading__link"
             target="_blank"
             href="https://dribbble.com/sl"
           >
@@ -38,8 +38,8 @@ function AdvieAlert() {
           </a>
         </p>
       </div>
-      <div class="cards">
-        <div class="card card-1">
+      <div className="cards">
+        <div className="card card-1">
           <h1 style={{fontSize: "1.2rem", fontWeight: "bold", color: "var(--lightGray)"}}>Are you ready to start your health journey?</h1>
           <div className="testDF">
           <div className="givenAdvice">

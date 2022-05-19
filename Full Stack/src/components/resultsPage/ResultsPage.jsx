@@ -33,11 +33,11 @@ const ResultsPage = () => {
         {/* <div className="sliderImage"> */}
         <ReactCompareSlider
           boundsPadding={0}
-          itemOne={<ReactCompareSliderImage alt="Image one" src={rolf35} />}
+          itemOne={<ReactCompareSliderImage alt="Image one" src={localStorage.getItem('badImg')} />}
           itemTwo={
             <ReactCompareSliderImage
               alt="Image two"
-              src={rolf50}
+              src={localStorage.getItem('goodImg')}
               style={{ transform: "scale(1)" }}
             />
           }

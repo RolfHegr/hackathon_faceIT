@@ -5,7 +5,7 @@ import { Navigate, useNavigate } from "react-router-dom";
 import { useStepperContext } from "../../contexts/StepperContext";
 
 export default function Final() {
-  const { userData,setGoodImg,setBadImg } = useStepperContext();
+  const { userData } = useStepperContext();
   const [isLoading, setIsLoading] = useState(true);
   const navigate = useNavigate();
   let obesity = 0
@@ -14,8 +14,8 @@ export default function Final() {
     userData.obesity = obesity
     delete userData.height
     delete userData.weight
-    userData.average_drink = userData.average_drink *4
-    userData.physical_activity = userData.physical_activity *4
+    userData.average_drink = userData.average_drink * 4
+    userData.physical_activity = userData.physical_activity * 4
     localStorage.setItem("userData", JSON.stringify((userData)))
   }
   calculateBMI()
@@ -27,13 +27,14 @@ export default function Final() {
     for (var pair of formData.entries()) {
       console.log(pair[0] + ' ' + pair[1]);
     }
-    const response = await axios.post('http://3.73.63.133:8080/predict_age',formData)
+    const response = await axios.post('http://3.73.63.133:8080/predict_age', formData)
     setIsLoading(false)
-    const {data} = response
-    const badImg = 'http://3.73.63.133:8080'+data.response.bad_img_url
-    const goodImg = 'http://3.73.63.133:8080'+data.response.good_img_url 
-    setBadImg(badImg)
-    setGoodImg(goodImg)
+    const { data } = response
+    console.log(data);
+    const badImg = 'http://3.73.63.133:8080' + data.response.bad_img_url
+    const goodImg = 'http://3.73.63.133:8080' + data.response.good_img_url
+    localStorage.setItem('badImg', badImg)
+    localStorage.setItem('goodImg', goodImg)
 
   }, []);
 
@@ -74,7 +75,7 @@ export default function Final() {
         {/* <div className="text-lg font-semibold text-gray-500">
           Your Account has been created.
         </div> */}
-   <a className="mt-10">
+        {!isLoading && <a className="mt-10">
           <button
             onClick={processData}
             className="h-10 px-5 text-white-900 transition-colors duration-150 border border-gray-300 rounded-lg focus:shadow-outline hover:bg-green-500 hover:text-white-900"
@@ -82,7 +83,7 @@ export default function Final() {
           >
             See Results
           </button>
-        </a>
+        </a>}
       </div>
     </div>
   );

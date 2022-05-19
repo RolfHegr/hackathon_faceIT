@@ -5,7 +5,7 @@ import ImageUpload from "../ImageUpload";
 
 export default function Personal() {
   const { userData, setUserData } = useStepperContext();
-  
+  localStorage.clear()
 
   const handleChange = (e) => {
     const { name, value } = e.target;
