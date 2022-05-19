@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Container } from "react-bootstrap";
+import { Alert, Container } from "react-bootstrap";
 import "./resultsPage.css";
 import face from "../welcomePage/images/face.jpg";
 import test from "../welcomePage/images/test.png";
@@ -11,10 +11,13 @@ import {
   ReactCompareSliderImage,
 } from "react-compare-slider";
 import { useNavigate } from "react-router-dom";
+import AdvieAlert from "../AdvieAlert";
 
 const ResultsPage = () => {
   const [showMore, setShowMore] = useState(true);
   const navigate = useNavigate()
+
+  
   //   const [goodYou, setGoodYou] = useState(false);
   //   const [futureYou, setFutureYou] = useState(false);
 
@@ -43,9 +46,10 @@ const ResultsPage = () => {
           />
         </div>
       </div>
-        <div className="resultBtn">
-        <button onClick={() => navigate("/reccomend")}>Reccomendatins</button>
-        </div>
+        {/* <div className="resultBtn"> */}
+          {/* <h6>Daily advice</h6> */}
+          {<AdvieAlert />}
+        {/* </div> */}
     </Container>
   );
 };
