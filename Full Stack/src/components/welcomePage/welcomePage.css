@@ -9,7 +9,7 @@
     color: var(--black);
     font-size: 72px;
     font-weight: 500;
-    padding-top: 21rem;
+    padding-top: 13rem;
 
 }
 .welcomeBtn:hover{
@@ -20,7 +20,7 @@
     font-weight: 300;
 }
 .welcomeWrapper>button {
-    margin-top: 13rem;
+    margin-top: 8rem;
     background-color: black;
     color: white;
     border-radius: 14px;
@@ -31,7 +31,7 @@
     width: fit-content;
 }
 .welcomeFace {
-padding-top: 15rem;
+padding-top: 11rem;
 }
 .sideInfo {
     display: flex;
@@ -67,4 +67,16 @@ padding-top: 15rem;
     display: flex;
     gap: 20px;
     cursor: pointer;
+}
+
+.face {
+     height: 40%;
+}
+
+.ageControl {
+    margin-top: 1rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+    display: flex;
+    color: var(--darkGray)
 }
