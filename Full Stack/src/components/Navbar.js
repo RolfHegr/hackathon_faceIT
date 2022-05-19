@@ -20,7 +20,7 @@ function HomeNavbar() {
           <img src={geoface} width="45" href="/"/>
           <Navbar.Brand
             style={{
-              color: "black",
+              color: "#76C6FC",
               fontSize: "2rem",
               fontWeight: "bold",
               margin: "0",

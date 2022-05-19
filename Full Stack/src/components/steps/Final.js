@@ -15,6 +15,7 @@ export default function Final() {
     delete userData.weight
     userData.average_drink = userData.average_drink *4
     userData.physical_activity = userData.physical_activity *4
+    localStorage.setItem("userData", JSON.stringify((userData)))
   }
   calculateBMI()
   useEffect(() => {
@@ -64,7 +65,7 @@ export default function Final() {
         {/* <div className="text-lg font-semibold text-gray-500">
           Your Account has been created.
         </div> */}
-    { !isLoading && (  <a className="mt-10">
+   <a className="mt-10">
           <button
             onClick={processData}
             className="h-10 px-5 text-white-900 transition-colors duration-150 border border-gray-300 rounded-lg focus:shadow-outline hover:bg-green-500 hover:text-white-900"
@@ -72,7 +73,7 @@ export default function Final() {
           >
             See Results
           </button>
-        </a>)}
+        </a>
       </div>
     </div>
   );

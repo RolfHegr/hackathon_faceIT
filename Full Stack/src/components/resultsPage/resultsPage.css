@@ -55,6 +55,28 @@
   color: white;
   cursor: pointer;
 }
+.headerAge {
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+}
+.reccomendBtn {
+  background-color: var(--black);
+  width: 20%;
+  align-content: center;
+  font-weight: 700;
+  color: white;
+  cursor: pointer;
+  margin: 1rem 0 2rem 0;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+
+}
+.cardBtnCtl {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 /* 
 .goodAgeTest{
     border: 2px solid red;
