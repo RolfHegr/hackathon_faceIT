@@ -48,9 +48,7 @@ const ResultsPage = () => {
           <span className="badAgeTest">60</span>
         </div>
       </div>
-      <div className="resultBtn">
-        <button onClick={() => navigate("/reccomend")}>Reccomendatins</button>
-      </div>
+      <AdvieAlert/>
     </Container>
   );
 };
