@@ -24,7 +24,7 @@ const ResultsPage = () => {
         <h1>Welcome to the future you</h1>
       </div>
       <div className="sliderCard">
-        <div className="sliderImage">
+        {/* <div className="sliderImage"> */}
           <ReactCompareSlider
             boundsPadding={0}
             itemOne={<ReactCompareSliderImage alt="Image one" src={stevenOld} />}
@@ -36,12 +36,12 @@ const ResultsPage = () => {
               />
             }
             position={50}
-            style={{
-              height: "50%",
-              width: "100%",
-            }}
+            // style={{
+            //   height: "30%",
+            //   width: "55%",
+            // }}
           />
-        </div>
+        {/* </div> */}
       </div>
         <div className="resultBtn">
         <button onClick={() => navigate("/reccomend")}>Reccomendatins</button>

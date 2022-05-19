@@ -38,16 +38,18 @@
 }
 
 .sliderImage {
-    /* width: 60%;
-    margin: 5rem auto; */
+    width: 100%;
+    margin: 0 auto;   
 }
 
 .sliderCard {
-    padding: 1rem;
     background-color: white;
-    background-color: white;
-    padding: 2.5rem;
-    width: 63%;
+    padding: 1.5rem;
+    width: 40%;
+    box-shadow: 2px 7px 11px 0px rgba(214,214,214,0.85);
+    -webkit-box-shadow: 2px 7px 11px 0px rgba(214,214,214,0.85);
+    -moz-box-shadow: 2px 7px 11px 0px rgba(214,214,214,0.85);
+    border-radius: 10px;
 }
 .resultBtn{
     background-color: black;

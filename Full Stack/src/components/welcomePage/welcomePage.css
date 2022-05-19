@@ -9,7 +9,7 @@
     color: var(--black);
     font-size: 72px;
     font-weight: 500;
-    padding-top: 21rem;
+    padding-top: 13rem;
 
 }
 .welcomeBtn:hover{
@@ -31,7 +31,7 @@
     width: fit-content;
 }
 .welcomeFace {
-padding-top: 15rem;
+padding-top: 11rem;
 }
 .sideInfo {
     display: flex;
@@ -67,4 +67,9 @@ padding-top: 15rem;
     display: flex;
     gap: 20px;
     cursor: pointer;
+}
+
+.face {
+    border: 2px solid yellow;
+    height: 40%;
 }
