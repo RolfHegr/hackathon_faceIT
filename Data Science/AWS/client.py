@@ -1,4 +1,6 @@
 import requests
-img_file = {"img_file": open("user_images/pengmin.png","rb")}
+img_file = {"img_file": open("pengmin.png","rb")}
 
-print(requests.post("http://d34b-35-233-146-57.ngrok.io",files=img_file).)
+# print(requests.post("http://025e-34-105-93-37.ngrok.io/?age=44",files=img_file))
+
+print(requests.post("http://127.0.0.1",))
