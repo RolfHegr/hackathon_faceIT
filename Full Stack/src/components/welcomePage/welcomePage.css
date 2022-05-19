@@ -31,7 +31,8 @@
     width: fit-content;
 }
 .welcomeFace {
-padding-top: 11rem;
+    padding-top: 2rem;
+    width: 55%;
 }
 .sideInfo {
     display: flex;

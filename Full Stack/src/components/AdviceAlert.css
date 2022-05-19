@@ -50,7 +50,7 @@
     margin: 20px;
     padding: 20px;
     width: 500px;
-    min-height: 200px;
+    min-height: 220px;
     display: grid;
     grid-template-rows: 20px 50px 1fr 50px;
     border-radius: 10px;
@@ -58,11 +58,7 @@
     transition: all 0.2s;
   }
   
-  .card:hover {
-    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
-    transform: scale(1.01);
-  }
-  
+ 
   .card__link,
   .card__exit,
   .card__icon {
@@ -79,7 +75,6 @@
     width: 0%;
     height: 3px;
     background-color: rgba(255, 255, 255, 0.6);
-    transition: all 0.5s;
   }
   
   .card__link:hover::after {
@@ -110,7 +105,7 @@
   /* CARD BACKGROUNDS */
   
   .card-1 {
-    background: radial-gradient(#90aeb1, rgb(255 251 251 / 90%));
+    background-color: white;
   }
   
   
@@ -120,4 +115,21 @@
     .cards {
       justify-content: center;
     }
+  }
+.testDF {
+  display: flex;
+  flex-direction: column;
+}
+  .givenAdvice {
+    padding: 1rem;
+  }
+  .adviceBtn {
+    background-color: var(--darkGray);
+    border-radius: 10px;
+    color: white;
+    margin: 0 auto;
+    padding: 0.5rem 1rem;
+  }
+  .adviceBtn:hover {
+    background-color: var(--lightGray);
   }
