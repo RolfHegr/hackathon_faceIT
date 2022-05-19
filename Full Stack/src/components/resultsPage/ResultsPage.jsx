@@ -42,10 +42,10 @@ const ResultsPage = () => {
             }}
           />
         </div>
+      </div>
         <div className="resultBtn">
         <button onClick={() => navigate("/reccomend")}>Reccomendatins</button>
         </div>
-      </div>
     </Container>
   );
 };
