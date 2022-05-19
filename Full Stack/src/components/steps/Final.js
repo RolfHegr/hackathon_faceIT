@@ -1,31 +1,40 @@
+import axios from "axios";
 import { useEffect, useState } from "react";
 import { Spinner } from "react-bootstrap";
 import { Navigate, useNavigate } from "react-router-dom";
 import { useStepperContext } from "../../contexts/StepperContext";
 
 export default function Final() {
-  const { userData } = useStepperContext();
+  const { userData,setGoodImg,setBadImg } = useStepperContext();
   const [isLoading, setIsLoading] = useState(true);
   const navigate = useNavigate();
   let obesity = 0
-  function calculateBMI(){
-    obesity = (userData.weight / ((userData.height /100)**2))/30
+  function calculateBMI() {
+    obesity = (userData.weight / ((userData.height / 100) ** 2)) / 30
     userData.obesity = obesity
     delete userData.height
     delete userData.weight
-    userData.average_drink = userData.average_drink *4
-    userData.physical_activity = userData.physical_activity *4
+    userData.average_drink = userData.average_drink / 7
+    userData.physical_activity = userData.physical_activity / 4
   }
   calculateBMI()
-  useEffect(() => {
+  useEffect(async () => {
     const formData = new FormData();
     for (let key in userData) {
       formData.append(key, userData[key]);
     }
     for (var pair of formData.entries()) {
-      console.log(pair[0] + ", " + pair[1]);
+      console.log(pair[0] + ' ' + pair[1]);
     }
-  });
+    const response = await axios.post('http://3.73.63.133:8080/predict_age',formData)
+    setIsLoading(false)
+    const {data} = response
+    const badImg = 'http://3.73.63.133:8080'+data.response.bad_img_url
+    const goodImg = 'http://3.73.63.133:8080'+data.response.good_img_url 
+    setBadImg(badImg)
+    setGoodImg(goodImg)
+
+  }, []);
 
   const processData = () => {
     navigate("./result");
@@ -34,7 +43,7 @@ export default function Final() {
     <div className="container md:mt-10">
       <div className="flex flex-col items-center">
         {isLoading && (
-          <img style={{borderRadius:'14px'}} src="https://www.webtunix.ai/static/img/faceman.gif" />
+          <img style={{ borderRadius: '14px' }} src="https://www.webtunix.ai/static/img/faceman.gif" />
         )}
         {/* <div className="wrapper">
           <svg
@@ -64,7 +73,7 @@ export default function Final() {
         {/* <div className="text-lg font-semibold text-gray-500">
           Your Account has been created.
         </div> */}
-    { !isLoading && (  <a className="mt-10">
+        {!isLoading && (<a className="mt-10">
           <button
             onClick={processData}
             className="h-10 px-5 text-white-900 transition-colors duration-150 border border-gray-300 rounded-lg focus:shadow-outline hover:bg-green-500 hover:text-white-900"
