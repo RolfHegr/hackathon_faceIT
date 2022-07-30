@@ -33,11 +33,11 @@ const ResultsPage = () => {
         {/* <div className="sliderImage"> */}
         <ReactCompareSlider
           boundsPadding={0}
-          itemOne={<ReactCompareSliderImage alt="Image one" src={localStorage.getItem('badImg')} />}
+          itemOne={<ReactCompareSliderImage alt="Image one" src={localStorage.getItem('goodImg')} />}
           itemTwo={
             <ReactCompareSliderImage
               alt="Image two"
-              src={localStorage.getItem('goodImg')}
+              src={localStorage.getItem('badImg')}
               style={{ transform: "scale(1)" }}
             />
           }
@@ -63,7 +63,18 @@ const ResultsPage = () => {
         <button className="reccomendBtn" onClick={() => {setShowMore(!showMore)}}>SHOW ME HOW</button>
         </div>
         {!showMore && (<AdvieAlert/> )}
-        
+        <p>{`@article{alaluf2021matter,
+    author = {Alaluf, Yuval and Patashnik, Or and Cohen-Or, Daniel},
+    title = {Only a Matter of Style: Age Transformation Using a Style-Based Regression Model},
+    journal = {ACM Trans. Graph.},
+    issue_date = {August 2021},
+    volume = {40},
+    number = {4},
+    year = {2021},
+    articleno = {45},
+    publisher = {Association for Computing Machinery},
+    url = {https://doi.org/10.1145/3450626.3459805}
+}`}</p>
     </Container>
   );
 };
